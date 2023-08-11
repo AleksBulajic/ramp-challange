@@ -13,3 +13,20 @@ rampElements.forEach((rampElement) => {
         console.log(matchingPattern);
     }
 });
+
+
+
+
+       
+// const rampElements = document.querySelectorAll('.ramp');
+
+
+// const patternSelector = 'ul[data-tag="*75*"] li[data-id="98*"] div[data-class="*35"] span.value[value="VALID_CHARACTER"]';
+
+
+// rampElements.forEach((rampElement) => {
+//     const matchingPattern = rampElement.querySelector(patternSelector);
+//     if (matchingPattern) {
+//         console.log(matchingPattern);
+//     }
+// });
