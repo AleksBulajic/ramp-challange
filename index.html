@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="ramp.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramp - Frontend Challenge</title>
@@ -1451,6 +1450,29 @@
         </div>
       </li>
     </ul>
+    <script>
+        const ulElements = document.querySelectorAll('ul.ramp');
+        const extractedValues = [];
+        
+        ulElements.forEach((ulElement) => {
+          const liElement = ulElement.querySelector('li.ramp');
+          if (liElement) {
+            const divElement = liElement.querySelector('div.ramp');
+            if (divElement) {
+              const spanElement = divElement.querySelector('span.ramp.value');
+              if (spanElement) {
+                // Extract the value from the span element
+                const value = spanElement.getAttribute('value');
+                extractedValues.push(value);
+              }
+            }
+          }
+        });
+        
+        // Join the extracted values into a single string
+        const resultString = extractedValues.join('');
+        console.log('Extracted values:', resultString);
+    </script>
   </body>
 </html>
 <html>
