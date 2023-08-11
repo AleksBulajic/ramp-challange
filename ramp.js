@@ -1,4 +1,4 @@
-// Assuming this code is part of an HTML file in a <script> tag
+
 
 // 1. Select elements with the 'ramp' class
 const rampElements = document.querySelectorAll('.ramp');
